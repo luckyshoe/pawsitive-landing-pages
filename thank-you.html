@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You're In! — PawsitiveLiving</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #fdf9f4;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .card {
+      background: white;
+      border-radius: 20px;
+      max-width: 480px;
+      width: 100%;
+      padding: 40px 36px;
+      box-shadow: 0 4px 40px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+
+    .icon { font-size: 56px; margin-bottom: 16px; }
+
+    .badge {
+      display: inline-block;
+      background: #e8f5e9;
+      color: #2e7d32;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      padding: 6px 14px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 800;
+      color: #1a1a1a;
+      line-height: 1.3;
+      margin-bottom: 14px;
+    }
+
+    h1 span { color: #e67e22; }
+
+    .subtext {
+      font-size: 15px;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 32px;
+    }
+
+    .divider {
+      border: none;
+      border-top: 1px solid #f0f0f0;
+      margin-bottom: 28px;
+    }
+
+    .upsell-label {
+      font-size: 12px;
+      font-weight: 700;
+      color: #aaa;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+
+    .upsell-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      margin-bottom: 32px;
+    }
+
+    .upsell-card {
+      background: #fdf9f4;
+      border: 2px solid #f0e6d3;
+      border-radius: 14px;
+      padding: 18px 20px;
+      text-decoration: none;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: border-color 0.2s;
+    }
+
+    .upsell-card:hover { border-color: #e67e22; }
+
+    .upsell-icon { font-size: 32px; flex-shrink: 0; }
+
+    .upsell-text h3 {
+      font-size: 15px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin-bottom: 4px;
+    }
+
+    .upsell-text p {
+      font-size: 13px;
+      color: #777;
+      line-height: 1.5;
+    }
+
+    .upsell-text .free-tag {
+      display: inline-block;
+      background: #fff3e0;
+      color: #e67e22;
+      font-size: 11px;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 10px;
+      margin-top: 6px;
+    }
+
+    .cta-section { margin-bottom: 8px; }
+
+    .cta-label {
+      font-size: 13px;
+      color: #aaa;
+      margin-bottom: 14px;
+    }
+
+    .btn {
+      display: block;
+      background: #e67e22;
+      color: white;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 16px;
+      border-radius: 12px;
+      text-decoration: none;
+      letter-spacing: 0.3px;
+      transition: background 0.2s;
+    }
+
+    .btn:hover { background: #d35400; }
+
+    .footer-note {
+      margin-top: 20px;
+      font-size: 12px;
+      color: #bbb;
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">🎉</div>
+    <div class="badge">You're all set!</div>
+
+    <h1>Check Your Inbox — Your <span>Free Download</span> Is On Its Way!</h1>
+
+    <p class="subtext">
+      We just sent it to your email. If you don't see it in 2 minutes,
+      check your spam folder and mark us as safe so you never miss a thing.
+    </p>
+
+    <hr class="divider" />
+
+    <p class="upsell-label">While you wait — grab these free too</p>
+
+    <div class="upsell-cards">
+      <a href="warning-signs-landing.html" class="upsell-card">
+        <div class="upsell-icon">🐾</div>
+        <div class="upsell-text">
+          <h3>10 Warning Signs Your Dog Is Sick</h3>
+          <p>The signs most owners miss — until it's too late.</p>
+          <span class="free-tag">FREE CHECKLIST</span>
+        </div>
+      </a>
+
+      <a href="essential-guide-landing.html" class="upsell-card">
+        <div class="upsell-icon">📘</div>
+        <div class="upsell-text">
+          <h3>Dog Owner's Essential Guide</h3>
+          <p>12 pages covering everything from nutrition to senior care.</p>
+          <span class="free-tag">FREE GUIDE</span>
+        </div>
+      </a>
+
+      <a href="https://mydogcheck.netlify.app" target="_blank" class="upsell-card">
+        <div class="upsell-icon">🔢</div>
+        <div class="upsell-text">
+          <h3>What's Your Dog's Real Age?</h3>
+          <p>Most owners are surprised by the answer. Takes 10 seconds.</p>
+          <span class="free-tag">FREE TOOL</span>
+        </div>
+      </a>
+    </div>
+
+    <div class="cta-section">
+      <p class="cta-label">Everything dog-related, all in one place:</p>
+      <a href="https://hopp.bio/pawsitiveliving" target="_blank" class="btn">
+        Visit PawsitiveLiving 🐾
+      </a>
+    </div>
+
+    <p class="footer-note">
+      Questions? Just reply to the email we sent you.<br>
+      We read every message.
+    </p>
+  </div>
+</body>
+</html>
