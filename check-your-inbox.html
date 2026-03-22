@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Check Your Inbox — PawsitiveLiving</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #fdf9f4;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      max-width: 480px;
+      width: 100%;
+      padding: 40px 36px;
+      box-shadow: 0 4px 40px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .icon { font-size: 64px; margin-bottom: 16px; }
+    .badge {
+      display: inline-block;
+      background: #fff3e0;
+      color: #e67e22;
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 6px 16px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    h1 {
+      font-size: 26px;
+      font-weight: 800;
+      color: #1a1a1a;
+      line-height: 1.3;
+      margin-bottom: 16px;
+    }
+    h1 span { color: #e67e22; }
+    .subtext {
+      font-size: 16px;
+      color: #555;
+      line-height: 1.7;
+      margin-bottom: 28px;
+    }
+    .steps {
+      background: #fdf9f4;
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 24px;
+      text-align: left;
+    }
+    .step {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .step:last-child { margin-bottom: 0; }
+    .step-num {
+      width: 32px;
+      height: 32px;
+      background: #e67e22;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 14px;
+      flex-shrink: 0;
+    }
+    .step-text { font-size: 15px; color: #333; line-height: 1.5; padding-top: 5px; }
+    .step-text strong { color: #1a1a1a; }
+    .spam-note {
+      background: #fff8e1;
+      border: 1px solid #ffe082;
+      border-radius: 10px;
+      padding: 14px 18px;
+      font-size: 13px;
+      color: #7a6000;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .footer {
+      font-size: 12px;
+      color: #aaa;
+    }
+    .paw { color: #e67e22; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">📬</div>
+    <div class="badge">One more step!</div>
+
+    <h1>Check Your Inbox to <span>Unlock Your Downloads</span></h1>
+
+    <p class="subtext">
+      We just sent you a confirmation email. Click the button inside
+      to verify your email and instantly unlock your free downloads.
+    </p>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-text"><strong>Open your email inbox</strong> — look for an email from PawsitiveLiving</div>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-text"><strong>Click the confirm button</strong> inside the email</div>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-text"><strong>Your downloads unlock instantly</strong> — both free resources are yours 🐾</div>
+      </div>
+    </div>
+
+    <div class="spam-note">
+      📁 <strong>Can't find the email?</strong> Check your <strong>spam or promotions folder</strong>.
+      If it's there, mark it as "Not Spam" so our future emails reach you directly.
+    </div>
+
+    <div class="footer">
+      <span class="paw">🐾</span> PawsitiveLiving — We love dogs as much as you do
+    </div>
+  </div>
+</body>
+</html>
